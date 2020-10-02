@@ -1682,6 +1682,7 @@ echo "Eroare configurare index.php."
 fi
 
 cd
+rm -rf vps_s
 rm setup.sh
 su $sftpuser
 else
