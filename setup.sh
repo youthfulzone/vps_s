@@ -1,11 +1,4 @@
 #!/bin/sh
--get update -y
-DEBIAN_FRONTEND=noninteractive \
-apt-get \
--o Dpkg::Options::="--force-confnew" \
---force-yes \
--fuy \
-dist-upgrade
 if [ $1 = "initial" ]; then
 apt
 if grep "#Port 22" /etc/ssh/sshd_config >/dev/null 2>&1; then
